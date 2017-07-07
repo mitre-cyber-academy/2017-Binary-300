@@ -1,10 +1,10 @@
 # PyGolf
 
 ##Description:
-See if you can score a hole in one. 
+See if you can score a hole in one.
 
 ## How to Solve
-Run max(open(str(bytearray(reversed([list(vars())[6]for(galf)in[0]][0])))))
+Run `max(open(str(bytearray(reversed([list(vars())[8]for(galf)in[0]][0])))))`
 
 
 # Flag
