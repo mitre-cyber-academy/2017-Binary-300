@@ -4,6 +4,14 @@ Author: Eugene Kolodenker <eugene@eugenekolo.com>
 """
 
 # no modules pls
+import resource
+
+rsrc = resource.RLIMIT_DATA
+soft, hard = resource.getrlimit(rsrc)
+resource.setrlimit(rsrc, (5001200, hard)) #limit to one 50 kilobyte
+
+del resource
+
 from sys import modules
 modules.clear()
 del modules
@@ -43,3 +51,7 @@ if __flag != inp:
     exit()
 
 print("Flag:"+open('./flag','r').read())
+#max(open(str(bytearray(reversed([list(vars())[8]for(galf)in[0]][0])))))
+
+
+
