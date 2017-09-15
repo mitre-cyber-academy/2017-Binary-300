@@ -5,6 +5,6 @@ services:
     read_only: true
     restart: unless-stopped
     ports:
-      - "2222:22"
+      - "2200:22"
     tmpfs:
       - /tmp
